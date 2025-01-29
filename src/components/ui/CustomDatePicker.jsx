@@ -1,11 +1,11 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
+import {Datepicker} from '@ui-kitten/components';
 
-const CustomDatePicker = () => {
+const CustomDatePicker = props => {
+  const {onSelectDate} = props;
   return (
-    <View>
-      <Text>CustomDatePicker</Text>
-    </View>
+    <Datepicker {...props} onSelect={nextDate => onSelectDate(nextDate)} />
   );
 };
 
