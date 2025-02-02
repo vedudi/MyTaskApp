@@ -1,97 +1,58 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+### 🚀  React Native ile Görev Yönetim Uygulaması! ✅📱
 
-# Getting Started
+sizlerle React Native kullanarak geliştirdiğim Task Management (Görev Yönetim) Uygulaması projemi paylaşmak istiyorum. 🎯 Bu uygulama, görevlerinizi kolayca oluşturmanızı, takip etmenizi ve yönetmenizi sağlayan kullanıcı dostu bir platform sunuyor.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+#### 🛠 Kullandığım Teknolojiler & Kütüphaneler:
 
-## Step 1: Start Metro
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+- 🔹 UI Kit & Tema: @ui-kitten/components + @eva-design/eva ile şık ve modern bir arayüz 🎨
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+- 🔹 Navigasyon: @react-navigation/native-stack ile akıcı geçişler 🌍
 
-```sh
-# Using npm
-npm start
+- 🔹 Durum Yönetimi: @react-native-async-storage/async-storage ile offline veri saklama 📡❌
 
-# OR using Yarn
-yarn start
-```
+- 🔹 Form Yönetimi: formik + yup ile sağlam form doğrulama sistemi 🔐
 
-## Step 2: Build and run your app
+- 🔹 Tarih İşlemleri: moment ile tarih formatlama ve hesaplamalar 🕒
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+- 🔹 SVG & İkonlar: react-native-svg ve iconsax-react-native ile özelleştirilmiş ikonlar 🎭
 
-### Android
+- 🔹 Cihaz Uyumluluğu: react-native-safe-area-context ve react-native-screens ile güvenli ve optimize ekran kullanımı 📲
 
-```sh
-# Using npm
-npm run android
+🎯 Uygulamanın Özellikleri:
 
-# OR using Yarn
-yarn android
-```
+-
+- ✅ Görev Ekleme & Yönetme: Kullanıcılar, görevlerini kolayca ekleyebilir, güncelleyebilir ve silebilir. 📝
 
-### iOS
+- ✅ Yapılacaklar Listesi: Günlük, haftalık veya özel tarihlere göre görevlerinizi düzenleyin. 📅
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+- ✅ Kategori Desteği: Görevleri farklı kategorilere ayırarak daha düzenli bir yapı oluşturun. 📂
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
+- ✅ Hatırlatma & Bildirimler: Önemli görevleri kaçırmamanız için hatırlatıcı sistem! 🔔
 
-```sh
-bundle install
-```
+- ✅ Offline Destek: İnternet bağlantınız olmasa bile verileriniz Async Storage ile saklanır. 🌐❌
 
-Then, and every time you update your native dependencies, run:
+- ✅ Modern & Kullanıcı Dostu Arayüz: UI Kitten ve Eva Design ile oluşturulmuş, estetik ve rahat bir deneyim sunan tasarım. 🎨
 
-```sh
-bundle exec pod install
-```
+- ✅ Hızlı ve Optimize Performans: React Native’in güçlü yapısı sayesinde akıcı bir kullanıcı deneyimi. ⚡
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+#### 💡 Bu Projeyi Geliştirirken Neler Öğrendim?
 
-```sh
-# Using npm
-npm run ios
 
-# OR using Yarn
-yarn ios
-```
+- 🔸 UI Kitten & Eva Design kullanarak tema yönetimini nasıl daha esnek hale getirebileceğimi öğrendim. 🎨
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+- 🔸 Formik ve Yup ile form doğrulama işlemlerinin nasıl daha güvenli yapılabileceğini deneyimledim. 🛡️
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+- 🔸 Async Storage ile verileri kalıcı olarak saklamanın önemini ve performans optimizasyonlarını test ettim. 🏗️
 
-## Step 3: Modify your app
+- 🔸 React Navigation kullanarak ekranlar arası geçişleri daha dinamik hale getirdim. 🔄
 
-Now that you have successfully run the app, let's make changes!
+🚀 Bu tarz projeler ilginizi çekiyor mu? Sizce bu uygulamaya başka hangi özellikler eklenebilir? Fikirlerinizi ve önerilerinizi yorumlarda bekliyorum! 💬✨
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+Linkedin: https://www.linkedin.com/feed/update/urn:li:activity:7291618985849098241/
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+💙 Eğer beğendiyseniz, destek olmak için beğenmeyi ve paylaşmayı unutmayın!
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+#ReactNative #MobileDevelopment #TaskApp #UIKitten #AsyncStorage #Formik #Yup #JavaScript #SoftwareDevelopment
 
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+<img src="myTaskApp.gif">
