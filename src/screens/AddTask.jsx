@@ -7,15 +7,17 @@ import Schema from '../utils/Schema';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {status} from '../utils/Constant';
 import uuid from 'react-native-uuid';
+import { useNavigation } from '@react-navigation/native';
 
 const AddTask = () => {
+  const navigation=useNavigation()
   const saveTask = async values => {
     try {
       const savedTasks = await AsyncStorage.getItem('tasks');
       let myTask = savedTasks ? JSON.parse(savedTasks) : [];
       myTask.push(values);
       await AsyncStorage.setItem('tasks', JSON.stringify(myTask));
-
+      navigation.goBack();
       console.warn('başarılı');
     } catch (error) {
       console.log(error);

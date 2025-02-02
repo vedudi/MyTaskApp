@@ -5,8 +5,11 @@ import moment from 'moment';
 import {setCategory} from '../utils/SetCategories';
 import {status, taskValues} from '../utils/Constant';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { useNavigation } from '@react-navigation/native';
+ 
 
 const TaskDetail = ({route}) => {
+  const navigation = useNavigation();
   const {item} = route?.params;
   const deleteTask = async () => {
     try {
@@ -17,6 +20,7 @@ const TaskDetail = ({route}) => {
       const tasks = JSON.parse(savedTasks);
       const fiteredTasks = tasks.filter(task => task.id !== item.id);
       await AsyncStorage.setItem('tasks', JSON.stringify(fiteredTasks));
+      navigation.goBack();
     } catch (error) {}
   };
   const updateTask = async newStatus => {
@@ -36,6 +40,7 @@ const TaskDetail = ({route}) => {
         return task;
       });
       await AsyncStorage.setItem('tasks', JSON.stringify(updatedTask));
+      navigation.goBack();
     } catch (error) {}
   };
   return (

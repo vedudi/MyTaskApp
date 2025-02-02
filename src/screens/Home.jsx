@@ -5,6 +5,7 @@ import {ADDTASKS} from '../utils/Routes';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import TaskCard from '../components/home/TaskCard';
 import HeaderComponent from '../components/home/HeaderComponent';
+import {Button} from '@ui-kitten/components';
 
 const Home = ({navigation}) => {
   const [tasks, setTasks] = useState([]);
@@ -71,6 +72,7 @@ const Home = ({navigation}) => {
           <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
         }
       />
+
       <FloatActionButton onPress={() => navigation.navigate(ADDTASKS)} />
     </View>
   );
